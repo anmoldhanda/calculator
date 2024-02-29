@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <!-- =================================================== google fonts =================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ================================================== custom css file ================================================== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="showresultinputcontainer">
+        <input
+          type="text"
+          name="showresultinputvalue"
+          placeholder="0"
+          id="calculateresultinput"
+        />
+      </div>
+      <div class="calculator-box">
+        <div class="operator-item">
+          <button class="digits calculateinputvaluebtn">7</button>
+        </div>
+        <div class="operator-item">
+          <button class="digits calculateinputvaluebtn">8</button>
+        </div>
+        <div class="operator-item">
+          <button class="digits calculateinputvaluebtn">9</button>
+        </div>
+        <div class="operator-item">
+          <button class="operator calculateinputvaluebtn">/</button>
+        </div>
+        <div class="operator-item">
+          <button class="digits calculateinputvaluebtn">4</button>
+        </div>
+        <div class="operator-item">
+          <button class="digits calculateinputvaluebtn">5</button>
+        </div>
+        <div class="operator-item">
+          <button class="digits calculateinputvaluebtn">6</button>
+        </div>
+        <div class="operator-item">
+          <button class="operator calculateinputvaluebtn">*</button>
+        </div>
+        <div class="operator-item">
+          <button class="digits calculateinputvaluebtn">1</button>
+        </div>
+        <div class="operator-item">
+          <button class="digits calculateinputvaluebtn">2</button>
+        </div>
+        <div class="operator-item">
+          <button class="digits calculateinputvaluebtn">3</button>
+        </div>
+        <div class="operator-item">
+          <button class="operator calculateinputvaluebtn">-</button>
+        </div>
+        <div class="operator-item">
+          <button class="digits calculateinputvaluebtn">0</button>
+        </div>
+        <div class="operator-item">
+          <button class="operator calculateinputvaluebtn">C</button>
+        </div>
+        <div class="operator-item">
+          <button class="operator calculateinputvaluebtn" id="resultbtn">
+            =
+          </button>
+        </div>
+        <div class="operator-item">
+          <button class="operator calculateinputvaluebtn">+</button>
+        </div>
+      </div>
+      <p class="feedbacktext">feedback</p>
+    </div>
+    <!-- ================================================== custom js file ================================================== -->
+    <script src="main.js"></script>
+  </body>
+</html>

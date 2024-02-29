@@ -1,0 +1,102 @@
+/* ================================================ custom variables ================================================ */
+:root {
+  --greycolor: #3c4043;
+  --primarycolor: #202124;
+  --digits: #3c4043;
+  --operator: #5f6368;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--primarycolor);
+}
+
+.calculator-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.calculator-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  place-content: center;
+  grid-gap: 5px;
+}
+
+.digits,
+.operator {
+  background-color: var(--digits);
+  color: #fff;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 80px;
+  border: none;
+  font-size: 15px;
+}
+
+.digits:hover,
+#calculateresultinput:hover {
+  background-color: #44484a;
+}
+
+.operator {
+  background-color: var(--operator);
+}
+
+.operator:hover {
+  background-color: #6b6f75;
+}
+
+#resultbtn {
+  background: #8ab4f8;
+  color: black;
+  font-weight: 500;
+}
+
+#resultbtn:hover {
+  background: #b8cff7;
+}
+
+.feedbacktext {
+  margin: 5px 0;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: var(--operator);
+}
+
+.feedbacktext::before {
+  content: "";
+  height: 1px;
+  width: 81%;
+  display: block;
+  background-color: var(--operator);
+  position: relative;
+  left: 64px;
+  top: 6px;
+}
+
+#calculateresultinput {
+  width: 100%;
+  padding: 5px 1px;
+  border-radius: 5px;
+  border: 1px solid var(--operator);
+  outline: none;
+  margin: 5px 0;
+  font-size: 1.5rem;
+  color: white;
+  background: transparent;
+}
